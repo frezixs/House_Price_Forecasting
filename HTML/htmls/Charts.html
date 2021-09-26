@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houseing Price</title>
+    <link rel="stylesheet" href="../Design/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class='menu-bar'>
+    <ul>
+        <li><a href='Homepage.html'>Home</a></li>
+        <li><a href='Project Overview.html'>Project Overview</a></li>
+        <li><a href='Deal & Selling Information.html'>Deal & Selling Information</a>
+            <div class='sub-menu-1'>
+                <ul>
+                    <li class='deal-selling'><a href='Deal.html'>Deal</a>
+                        <div class='sub-menu-2'>
+                            <ul>
+                                <li><a href='Beijing_Deal.html'>Beijing_Map</a></li>
+                                <li><a href='Shanghai_Deal.html'>Shanghai_Map</a></li>
+                            </ul>
+                        </div>
+                    </li>    
+                    <li class='deal-selling'><a href='Selling.html'>Selling</a>
+                        <div class='sub-menu-2'>
+                            <ul>
+                                <li><a href='Beijing_Selling.html'>Beijing_Map</a></li>
+                                <li><a href='Shanghai_Selling.html'>Shanghai_Map</a></li>
+                                <li><a href='Guangzhou_Selling.html'>Guangzhou_Map</a></li>
+                            </ul>
+                        </div>
+                    </li>            
+                </ul>
+            </div>
+        </li>
+        <li><a href='Charts.html'>Charts</a>
+        </li>
+        <li><a href='Contact.html'>Contact</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+
+    <div class = 'row'>
+        <div class = 'col-md-6'>
+            <select id="selDataset">
+                <option value="Selling">Selling</option>
+                <option value="Deal">Deal</option>
+            </select>
+        </div>
+        <div class = 'col-md-6'>
+            <select id="selDataset2">
+                <option value="Selling">Selling</option>
+                <option value="Deal">Deal</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div id="bar"></div>
+          </div>
+          <div class="col-md-3">
+            <div id="pie"></div>
+          </div>
+          <div class="col-md-3">
+            <div id="line"></div>
+          </div>
+          <div class="col-md-3">
+            <div id="pie1"></div>
+          </div>
+        </div>
+
+
+
+
+    <select id="selDataset1">
+        <option value="shanghai">Shanghai</option>
+        <option value="beijing">Beijing</option>
+        <option value="guangzhou">Guangzhou</option>
+    </select>
+    <div class="row">
+    <div class="col-md-8">
+        <div id="bar1"></div>
+      </div>
+      <div class="col-md-4">
+        <div id="gauge"></div>
+      </div>
+    </div>
+
+    <script src="../Design/jschart/chart.js"></script>
+    <script src="../Design/jschart/Final Deal.js"></script>
+    <script src="../Design/jschart/Final Selling.js"></script>
+</body>
+</html>
+
