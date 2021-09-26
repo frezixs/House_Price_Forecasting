@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houseing Price</title>
+    <link rel="stylesheet" href="../Design/css/style1.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class='menu-bar'>
+    <ul>
+        <li><a href='Homepage.html'>Home</a></li>
+        <li><a href='Project Overview.html'>Project Overview</a></li>
+        <li><a href='Deal & Selling Information.html'>Deal & Selling Information</a>
+            <div class='sub-menu-1'>
+                <ul>
+                    <li class='deal-selling'><a href='Deal.html'>Deal</a>
+                    </li>    
+                    <li class='deal-selling'><a href='Selling.html'>Selling</a>
+                    </li>            
+                </ul>
+            </div>
+        </li>
+        <li><a href='Charts.html'>Charts</a>
+        </li>
+        <li><a href='Contact.html'>Contact</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <div class="container-fluid" style='margin-top:75px'>
+        <div class="row">
+          <div class="col-md-2 bg-transparent">
+            <form>
+                <p style='color:rgb(255, 255, 255);font-size:25px'; align=center>Search</p>
+                  <ul class = "list-group list-group-mine">
+                    <li class = "list-group-item bg-transparent">
+                      <label for="city" style='color:rgb(255, 255, 255)'>City you want to live?</label><br>
+                      <select id = "City">
+                        <option value = "City"> Select City </option>
+                        <option value = "shanghai"> shanghai </option>
+                        <option value = "guangzhou"> guangzhou </option>
+                        <option value = "beijing"> beijing </option>
+                      </select>
+                      <!--<input type="text" placeholder="beijing" id="City"/>-->
+                    </li>
+                    <li class = "list-group-item bg-transparent">
+                      <label for="floor" style='color:rgb(255, 255, 255)'>Floor Level you want? </label><br>
+                      <select id = "Floor">
+                        <option value = "Floor"> Select Floor Level </option>
+                        <option value = "Low"> Low </option>
+                        <option value = "Middle"> Middle </option>
+                        <option value = "High"> High </option>
+                      </select>
+                    </li>
+                    <li class = "list-group-item bg-transparent">
+                      <label for="Elevator" style='color:rgb(255, 255, 255)'>Has an elevator ? </label><br>
+                      <select id = "Elevator">
+                        <option value = "Elevator"> Select Elevator </option>
+                        <option value = "Yes"> Yes </option>
+                        <option value = "No"> No </option>
+                        <option value = "Unknown"> Unknown </option>
+                      </select>
+                    </li>
+                    <li class = "list-group-item bg-transparent">
+                      <label for="Bedrooms" style='color:rgb(255, 255, 255)'>How many Bedrooms? </label><br>
+                      <select id = "Bedrooms">
+                        <option value = "Bedrooms"> Select # of Bedrooms </option>
+                        <option value = 1> 1 </option>
+                        <option value = 2> 2 </option>
+                        <option value = 3> 3 </option>
+                        <option value = 4> 4 </option>
+                        <option value = 5> 5 </option>
+                        <option value = 6> 6 </option>
+                        <option value = 7> 7 </option>
+                        <option value = 8> 8 </option>
+                      </select>
+                    </li>
+                    <li class = "list-group-item bg-transparent">
+                      <label for="LivingRooms" style='color:rgb(255, 255, 255)'>How many living Rooms?</label><br>
+                      <select id = "LivingRooms">
+                        <option value = "LivingRooms"> Select # of LivingRooms </option>
+                        <option value = 0> 0 </option>
+                        <option value = 1> 1 </option>
+                        <option value = 2> 2 </option>
+                        <option value = 3> 3 </option>
+                        <option value = 4> 4 </option>
+                        <option value = 5> 5 </option>
+                      </select>
+                    </li>
+                    <li class = "list-group-item bg-transparent">
+                      <label for="Kitchens" style='color:rgb(255, 255, 255)'>How many Kitchens? </label><br>
+                      <select id = "Kitchens">
+                        <option value = "Kitchens"> Select # of Kithchens </option>
+                        <option value = 0> 0 </option>
+                        <option value = 1> 1 </option>
+                        <option value = 2> 2 </option>
+                      </select>
+                    </li>
+                    <li class = "list-group-item bg-transparent">
+                      <label for="Bathrooms" style='color:rgb(255, 255, 255)'>How many Bathrooms? </label><br>
+                      <select id = "Bathrooms">
+                        <option value = "Bathrooms"> Select # of Bathrooms </option>
+                        <option value = 0> 0 </option>
+                        <option value = 1> 1 </option>
+                        <option value = 2> 2 </option>
+                        <option value = 3> 3 </option>
+                        <option value = 4> 4 </option>
+                        <option value = 5> 5 </option>
+                        <option value = 6> 6 </option>
+                        <option value = 9> 9 </option>
+                      </select>
+                    </li>
+                    <li class = "list-group-item bg-transparent">
+                      <label for="Renovation" style='color:rgb(255, 255, 255)'>What kind of Renovation you want? </label><br>
+                      <select id = "Renovation">
+                        <option value = "Renovation"> Select Renovation </option>
+                        <option value = "Hardcover"> Hardcover </option>
+                        <option value = "Simplicity"> Simplicity </option>
+                        <option value = "Rough"> Rough </option>
+                        <option value = "Other"> Other </option>
+                      </select>
+                    </li>
+                    <li class = "list-group-item bg-transparent">
+                      <label for="FloorType" style='color:rgb(255, 255, 255)'>What kind of Floor Type you want? </label><br>
+                      <select id = "FloorType">
+                        <option value = "FloorType"> Select FloorType </option>
+                        <option value = "Flat"> Flat </option>
+                        <option value = "Duplex"> Duplex </option>
+                        <option value = "Split-Level"> Split-Level </option>
+                        <option value = "Other"> Other </option>
+                      </select>
+                    </li>
+                </div>
+                <div class="col-md-10" style='margin-top:10px; color:#fff;'>
+                    <table class='table table-dark'>
+                      <thead>
+                        <tr>
+                          <th>City</th>
+                          <th>HouseName</th>
+                          <th>District</th>
+                          <th>TotalPrice</th>
+                          <th>Price</th>
+                          <th>Floor</th>
+                          <th>Square</th>
+                          <th>ConstructionTime</th>
+                          <th>Bedrooms</th>
+                          <th>LivingRooms</th>
+                          <th>Kitchens</th>
+                          <th>BathRooms</th>
+                          <th>Type</th>
+                          <th>Structure</th>
+                          <th>Renovation</th>
+                          <th>Elevator</th>
+                          <th>FloorType</th>
+                          <th>Lng</th>
+                          <th>Lat</th>
+                          <th>ID</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+        </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="../Design/jsselling/data.js"></script>
+    <script src="../Design/jsselling/app.js"></script>    
+</body>
+</html>
+
