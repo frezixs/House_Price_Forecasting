@@ -20,10 +20,6 @@ We split the data to 80% of training and 20% of testing.
 ## Model Choice
 Since we would like to predict the housing prices based on different features which is predicting continuous values. Therefore, we chose to use supervised learning regression model.
 
-- Multiple Linear Regression Model is used because we want to predict the total housing price based on the independent variables. 
-  Plotting these in a multiple regression model, we could use these features to see their relaitonship to the housing prices. However, multiple linear regression assumes that the data is independent.
-- Decision Tree Regression works well on both linear and non-linear problems, but overfitting can easily occur.
-- Random Forest Regression has higher accuracy and can perfom good on many problems, however, we need to choose the number of trees and overfitting can easily occur.
-- SVM Regression is not biased by outliers and works very well on non-linear problems.
-- KNN regression does not learn anything in the training period which makes it faster than other algorithms that require training. However, KNN does not work well with large dataset and high dimensions.
-- Light GBM Regression has faster training speed and higher efficiency, and has better accuracy than other boosting algorithm because it produces much more complex trees.
+![image](https://user-images.githubusercontent.com/82549782/134827513-ff54956b-9615-4d20-8d65-1b0227afea58.png)
+
+We fit the data into multiple models: linear regression, decision tree, random forest, LGBM regression, SVR, KNN and Lasso. Then, we used R2 and mean squared error to compare which model is the best fit model. The result shows that LGBM is our best fit model because it has the lowest MSE and the highest R2.
