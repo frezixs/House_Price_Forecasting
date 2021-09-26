@@ -25,5 +25,3 @@ We also fetch some data of shanghai housing price from http://sh.lianjia.com/che
 1. Analyze what factor will influence the housing price most significantly. 
 2. Predict housing price for next year. 
 
-## Github 
-All the requirement is satisfied for the first segment. 
