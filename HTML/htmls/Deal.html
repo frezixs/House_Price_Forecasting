@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houseing Price</title>
+    <link rel="stylesheet" href="../Design/css/style1.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class='menu-bar'>
+    <ul>
+        <li><a href='Homepage.html'>Home</a></li>
+        <li><a href='Project Overview.html'>Project Overview</a></li>
+        <li><a href='#'>Deal & Selling Information</a>
+            <div class='sub-menu-1'>
+                <ul>
+                    <li class='deal-selling'><a href='Deal.html'>Deal</a>
+                    </li>    
+                    <li class='deal-selling'><a href='Selling.html'>Selling</a>
+                    </li>            
+                </ul>
+            </div>
+        </li>
+        <li><a href='Charts.html'>Charts</a>
+        </li>
+        <li><a href='Contact.html'>Contact</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <div class="container-fluid" style='margin-top:75px'>
+        <div class="row">
+          <div class="col-md-2 bg-transparent">
+            <form>
+                <p style='color:rgb(255, 255, 255);font-size:25px'; align=center>Search</p>
+                <ul class="list-group bg-transparent">
+                  <li class="list-group-item bg-transparent">
+                    <label for="City" style='color:rgb(255, 255, 255)'>Enter City</label>
+                    <input type="text" style="border:0px;color:rgb(255, 0, 0)" placeholder="Shanghai" id="City" class = "form-control" />
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <label for="District" style='color:rgb(255, 255, 255)'>Enter District</label>
+                    <input type="text" style="border:0px;color:rgb(255, 0, 0)" placeholder="浦东" id="District" class = "form-control"/>
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <label for="Bedrooms" style='color:rgb(255, 255, 255)'>Enter Bedrooms</label>
+                    <input type="text" style="border:0px;color:rgb(255, 0, 0)" placeholder="1" id="Bedrooms" class = "form-control"/>
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <label for="LivingRooms" style='color:rgb(255, 255, 255)'>Enter Living Rooms</label>
+                    <input type="text" style="border:0px;color:rgb(255, 0, 0)" placeholder="1" id="LivingRooms" class = "form-control"/>
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <label for="Kitchens" style='color:rgb(255, 255, 255)'>Enter Kitchens</label>
+                    <input type="text" style="border:0px;color:rgb(255, 0, 0)" placeholder="1" id="Kitchens" class = "form-control"/>
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <label for="Bathrooms" style='color:rgb(255, 255, 255)'>Enter Bathrooms</label>
+                    <input type="text" style="border:0px;color:rgb(255, 0, 0)" placeholder="1" id="Bathrooms" class = "form-control"/>
+                  </li>
+                  <li class="list-group-item bg-transparent">
+                    <label for="Floor" style='color:rgb(255, 255, 255)'>Enter Floor</label>
+                    <input type="text" style="border:0px;color:rgb(255, 0, 0)" placeholder="High" id="Floor" class = "form-control"/>
+                  </li>
+                </ul>
+            </form>
+          </div>
+          <div class="col-md-10" style='margin-top:10px;color:#fff;'>
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th>City</th>
+                  <th>HouseName</th>
+                  <th>District</th>         
+                  <th>TotalPrice</th>
+                  <th>Price</th>
+                  <th>Floor</th>  
+                  <th>Square</th>
+                  <th>ConstructionTime</th>
+                  <th>Bedrooms</th>
+                  <th>LivingRooms</th>
+                  <th>Kitchens</th>
+                  <th>Bathrooms</th>
+                  <th>Type</th>
+                  <th>Structure</th>
+                  <th>Renovation</th>
+                  <th>Elevator</th>
+                  <th>Subway</th>
+                  <th>TradeTime</th>
+                  <th>DaysonMarket</th>
+                  <th>Followers</th>
+                  <th>Lng</th>
+                  <th>Lat</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="../Design/jsdeal/data.js"></script>
+    <script src="../Design/jsdeal/app.js"></script>
+</body>
+</html>
+
