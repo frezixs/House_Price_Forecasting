@@ -1,0 +1,105 @@
+.menu-bar
+{
+    background: url(../images/guangzhou.jpg);
+    background-size:980px;
+    text-align: center;
+}
+
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration:none;
+    color: rgb(248, 120, 0);
+    display: inline-flex;
+}
+
+.menu-bar ul li:hover
+{
+    background: transparent;
+    border-radius: 3px;
+}
+
+/* About sub menu */
+.sub-menu-1
+{
+    display: None;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: transparent;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color:rgb(0, 0, 0)
+}
+
+.sub-menu-2
+{
+    display: None;
+}
+
+.deal-selling:hover .sub-menu-2
+{
+    display: block;
+    position: absolute;
+    background: transparent;
+    margin-top: -40px;
+    margin-left: 140px;
+}
+
+.sub-menu-2
+{
+    display: None;
+}
+
+.data-analysis:hover .sub-menu-2
+{
+    display: block;
+    position: absolute;
+    background: transparent;
+    margin-top: -40px;
+    margin-left: 140px;
+}
+
+#map {
+    height: 88%;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
