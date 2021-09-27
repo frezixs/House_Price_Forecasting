@@ -18,7 +18,7 @@ We used feature importance to indicates the relative importance features when ma
 We split the data into 80% of training and 20% of testing.
 
 ## Model Choice
-Since we would like to predict the housing prices based on different features which is predicting continuous values. Therefore, we chose to use supervised learning regression model.
+Since we would like to predict the housing prices based on different features. Therefore, we chose to use supervised learning regression model.
 
 ![image](https://user-images.githubusercontent.com/82549782/134827513-ff54956b-9615-4d20-8d65-1b0227afea58.png)
 
