@@ -15,7 +15,7 @@ The features we chose are `City`, `District`, `Floor`, `FloorType`, `BuildingTyp
 We used feature importance to indicates the relative importance features when making a prediction. Feature importance scores can be calculated for problems that involve predicting a numerical value.
 
 ## Data Splitting
-We split the data to 80% of training and 20% of testing.
+We split the data into 80% of training and 20% of testing.
 
 ## Model Choice
 Since we would like to predict the housing prices based on different features which is predicting continuous values. Therefore, we chose to use supervised learning regression model.
