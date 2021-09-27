@@ -47,25 +47,13 @@ We created dashboards to present the data to our audience, include interactive t
 Also we used some machine learning technics to predict house price with given features. During this progress we selected models which performs best with the highest R2 score and lowest mean square error. 
 
 ## Machine Learning
-Supervised Learning: Regression
-Outcome(y): Total Price
-Features(X):
-City
-District
-FloorLevel
-FloorType
-BuildingType
-BuildingStructure
-RenovationCondition
-Elevator
-Number of Bedrooms
-Number of Living rooms
-Number of Kitchen
-Number of Bathrooms
+We chose to use supervised learning regression model because we would like to predict the housing prices based on different features.
 
-Split 80% data into training set and 20% data into testing set
+![image](https://user-images.githubusercontent.com/82549782/134827513-ff54956b-9615-4d20-8d65-1b0227afea58.png)
 
-The result shows LightGBM as our best model since it has the lowest MSE and the highest R2.
+We fit the data into multiple models: linear regression, decision tree, random forest, LGBM regression, SVR, KNN and Lasso. Then, we used R2 and mean squared error to compare which model is the best fit model. The result shows that LGBM is our best fit model because it has the lowest MSE and the highest R2.
+
+By using our best-fit model, we can predict housing prices for clients based on their preferred features. Here are two examples, two clients chose the features, then the model can predict prices for them. Our model can help clients to gain some understanding of the reasonable price for their dream house before purchasing one.
 
 ## DashBoard
 Now let’s have a look at our beautiful, gorgeous, remarkable, splendid, amazing dashboard :)))
