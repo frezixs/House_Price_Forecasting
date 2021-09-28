@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houseing Price</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="../static/css/main.css">
+</head>
+
+<body>
+    <div class="register_page">
+        <div class="form">
+            <form action="{{url_for('predict')}}" method="POST">
+<section>
+        <article>
+          <div class="container-fluid">
+              <div class="panel panel-primary">
+             <div class="panel-heading">
+                 <h3 class="panel-title" > Enter Information</h3>
+             <div class="row">
+               <div class="col-md-3">
+              <form class = "bg-dark" action="/result" method = "POST">
+                 <!-- <p>Filter Search</p> -->
+                 <ul class="bg-dark list-group"> 
+                     <li class = "list-group-item bg-dark" >
+                      <label for="City">City:</label>
+                      <select name="City" id="City" required>
+                        <option value="0">Beijing</option>
+                        <option value='1'>Guangzhou</option>
+                        <option value="2">Shanghai</option>
+                      </select>  
+                     </li>
+
+                     <li class = "list-group-item bg-dark" >
+                      <label for="District">District:</label>
+                      <select id="District" name="District" required>
+                        <option value="0">Dongcheng</option>
+                        <option value="1">Fengtai</option>
+                        <option value="2">Yizhuang</option>
+                        <option value="3">Conghua</option>
+                        <option value="4">Nansha</option>
+                        <option value="5">Jiading</option>
+                        <option value="6">Zengcheng</option>
+                        <option value="7">Daxing</option>
+                        <option value="8">Tianhe</option>
+                        <option value="9">Fengxian</option>
+                        <option value="10">Baoshan</option>
+                        <option value="11">Miyun</option>
+                        <option value="12">Chongming</option>
+                        <option value="13">Yanqing</option>
+                        <option value="14">Xuhui</option>
+                        <option value="15">Huairou</option>
+                        <option value="16">Fangshan</option>
+                        <option value="17">Changping</option>
+                        <option value="18">Putuo</option>
+                        <option value="19">Chaoyang</option>
+                        <option value="20">Yangpu</option> 
+                        <option value="21">Songjiang</option>
+                        <option value="22">Pudong</option>
+                        <option value="23">Haiding</option>
+                        <option value="24">Haizhu</option>
+                        <option value="25">Panyu</option>
+                        <option value="26">Baiyun</option>
+                        <option value="27">Shijingshan</option>
+                        <option value="28">Huadu</option>
+                        <option value="29">Liwan</option>
+                        <option value="30">Hongkou</option> 
+                        <option value="31">Xicheng</option>
+                        <option value="32">Yuexiu</option>
+                        <option value="33">Tongzhou</option>
+                        <option value="34">Jinshan</option>
+                        <option value="35">Changning</option>
+                        <option value="36">Mentouhong</option>
+                        <option value="37">Minhang</option>
+                        <option value="38">Qingpu</option>
+                        <option value="39">Jingan</option>
+                        <option value="40">Shunyi</option> 
+                        <option value="41">Huangpu</option>
+                        <option value="42">Huangpu</option>
+                      </select>
+                     </li>
+
+                     <li class = "list-group-item bg-dark" >
+                      <label for="FloorLevel">Floor Level:</label>
+                      <select id="FloorLevel" name="FloorLevel" required>
+                        <option value="0">Basement</option>
+                        <option value="1">FirstFloor</option>
+                        <option value="2">High</option>
+                        <option value="3">Low</option>
+                        <option value="4">Middle</option>
+                        <option value="5">Top</option>
+                      </select>
+                     </li>
+
+                     <li class = "list-group-item bg-dark" >
+                        <label for="FloorType">Floor Type:</label>
+                        <select id="FloorType" name="FloorType" required>
+                            <option value="0">Duplex</option>
+                            <option value="1">Flat</option>
+                            <option value="2">Other</option>
+                            <option value="3">Splite-Level</option>
+                        </select>
+                       </li>
+
+                       <li class = "list-group-item bg-dark" >
+                        <label for="BuildingType">Building Type:</label>
+                        <select id="BuildingType" name="BuildingType" required>
+                            <option value="0">Bungalow</option>
+                            <option value="1">Other</option>
+                            <option value="2">Plate</option>
+                            <option value="3">Plate&Tower</option>
+                            <option value="4">Tower</option>
+                        </select>
+                       </li>  
+
+                       <li class = "list-group-item bg-dark" >
+                        <label for="BuildingStructure">Building Structure:</label>
+                        <select id="BuildingStructure" name="BuildingStructure" required>
+                            <option value="0">Brick/Concrete</option>
+                            <option value="1">Brick/Wood</option>
+                            <option value="2">Mixed</option>
+                            <option value="3">Steel</option>
+                            <option value="4">Steel/Concrete</option>
+                        </select>
+                       </li>  
+
+                       <li class = "list-group-item bg-dark" >
+                        <label for="RenovationCondition">RenovationCondition:</label>
+                        <select id="RenovationCondition" name="RenovationCondition" required>
+                            <option value="0">Hardcover</option>
+                            <option value="1">Other</option>
+                            <option value="2">Rough</option>
+                            <option value="3">Simplicity</option>
+                        </select>
+                       </li>  
+
+                       <li class = "list-group-item bg-dark" >
+                        <label for="Elevator">Elevator:</label>
+                        <select id="Elevator" name="Elevator" required>
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                       </li>  
+
+                       <li class = "list-group-item bg-dark" >
+                        <label for="Bedrooms">Bedrooms:</label>
+                        <select id="Bedrooms" name="Bedrooms" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                       </li>  
+
+                       
+                       <li class = "list-group-item bg-dark" >
+                        <label for="LivingRooms">Living Rooms:</label>
+                        <select id="LivingRooms" name="LivingRooms" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                       </li>  
+
+                       <li class = "list-group-item bg-dark" >
+                        <label for="Kitchen">Kitchen:</label>
+                        <select id="Kitchen" name="Kitchen" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                       </li>  
+
+                       <li class = "list-group-item bg-dark" >
+                        <label for="Bathrooms">Bathrooms:</label>
+                        <select id="Bathrooms" name="Bathrooms" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                       </li>  
+
+                      <b><input align = "center" type="submit" value="Submit"></b>
+                       
+                 </ul>
+             </form>
+     </div>
+            <div class = 'col-md-9'>
+            <p> House Price is: {{data}}</p>
+        </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
