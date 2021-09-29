@@ -1,0 +1,12 @@
+# Individual Self Assessment
+
+## Self-Assessment
+- At the beginning, I was a data novice, except for simple Excel and SAS, I basically did not use other data analysis software. At the time, I was interested in data because I took a course in business analysis at Seneca College. But in the process of learning, I found that the knowledge I learned was not enough to support me to find a suitable data analysis job, so I came to this project course. Because for tasks of this type, there is only yes or no, which is right or wrong. So I asked myself to make a result every time, instead of doing half of it, and not doing it when encountering difficulties. Fortunately, in every challenge in the module, I got perfect results. However, maybe it is because I have no background in mathematics. I don't understand a bit in the several modules of learning machine learning. Although I know how to do it, I don't know the inner content. Therefore, I feel that after this course is over, I still need to study the knowledge of machine learning seriously. At the end of the course, I had a certain foundation in some software and languages ​​for data analysis. Although I encountered some problems when doing the project, I knew the basic logic. Therefore, Google's answer can also help me quickly The solution to my problem. In this project, I basically used all the content we have studied, which is particularly good. This is not only a summary for myself, but also let me know what instructions I am missing.
+
+
+## Team Assessment
+- For the team work, since we all are Chinese, we are easy to communiate and transfer files by WeChat. Everytime when teammates faces problem, other mates always provide solutions in first time which makes us finish our project quickly.
+
+
+## Summary of Project
+- This project is very good, we almost use all knowledge we learned from the classes. This Project is desgin to generated the data from webistes using web scripting technology, cleaned the data using the python, created database using the sqltie, visualized the data using javascript. Then we worked on machine learning to find the best method for our data, and also used that method to make predict the house price based on the Information.
